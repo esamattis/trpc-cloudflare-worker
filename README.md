@@ -2,6 +2,8 @@
 
 With the help of https://github.com/valu-digital/npm-packages/tree/master/packages/trpc-fetch-api-adapter
 
+This is bit hacky atm. See https://github.com/trpc/trpc/issues/1375
+
 ## Development
 
 Get configure your CloudFlare workers, get pnpm and run:
@@ -10,6 +12,16 @@ Get configure your CloudFlare workers, get pnpm and run:
 pnpm instal
 pnpm dev
 ```
+
+# Client
+
+See [src/client](/src/client.ts) and run it with
+
+```
+pnpm run run-client
+```
+
+## Deploy
 
 Deploy it to `*.workers.dev` with:
 
