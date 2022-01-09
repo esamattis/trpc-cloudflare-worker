@@ -14,7 +14,7 @@ Example https://trpc-demo.esamatti.workers.dev/api/hello
 Get configure your CloudFlare workers, get pnpm and run:
 
 ```
-pnpm instal
+pnpm install
 pnpm dev
 ```
 
