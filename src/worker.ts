@@ -37,6 +37,10 @@ export type AppRouter = typeof appRouter;
 async function respond(request: Request): Promise<Response> {
     const url = new URL(request.url);
 
+    if (["/api", "/api/"].includes(url.pathname)) {
+        return new Response("trcp api root", { status: 200 });
+    }
+
     if (url.pathname.startsWith("/api/")) {
         return await respondWithTRPC(request);
     }
