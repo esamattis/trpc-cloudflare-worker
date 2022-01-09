@@ -4,7 +4,7 @@ Object.assign(global, { fetch });
 
 import { createTRPCClient } from "@trpc/client";
 import { httpLink } from "@trpc/client/links/httpLink";
-import { AppRouter } from "./worker";
+import type { AppRouter } from "./worker";
 
 const client = createTRPCClient<AppRouter>({
     //     url: "http://localhost:3000/trpc",
