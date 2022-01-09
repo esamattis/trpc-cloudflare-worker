@@ -15,7 +15,7 @@ Get configure your CloudFlare workers, get pnpm and run:
 
 ```
 pnpm install
-pnpm dev
+pnpm run dev
 ```
 
 # Client
