@@ -1,0 +1,40 @@
+{
+    "name": "worker-typescript-template",
+    "version": "1.0.0",
+    "description": "Cloudflare worker TypeScript template",
+    "main": "dist/worker.js",
+    "scripts": {
+        "build": "node build.js",
+        "format": "prettier --write  '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
+        "run-client": "node -r @swc-node/register src/client.ts",
+        "deploy": "wrangler publish",
+        "dev": "wrangler dev"
+    },
+    "author": "author",
+    "license": "MIT OR Apache-2.0",
+    "devDependencies": {
+        "@cloudflare/workers-types": "^3.0.0",
+        "@types/node-fetch": "^3.0.3",
+        "@types/service-worker-mock": "^2.0.1",
+        "@typescript-eslint/eslint-plugin": "^4.16.1",
+        "@typescript-eslint/parser": "^4.16.1",
+        "prettier": "^2.3.0",
+        "service-worker-mock": "^2.0.5",
+        "ts-jest": "^27.0.1",
+        "ts-loader": "^9.2.2",
+        "typescript": "^4.3.2",
+        "webpack": "^5.38.1",
+        "webpack-cli": "^4.7.0"
+    },
+    "dependencies": {
+        "@swc-node/register": "^1.4.2",
+        "@trpc/client": "^9.16.0",
+        "@trpc/server": "^9.16.0",
+        "@valu/trpc-fetch-api-adapter": "^0.0.2",
+        "esbuild": "^0.14.11",
+        "esbuild-plugin-ignore": "^1.1.1",
+        "node-fetch": "^2.0.0",
+        "url": "^0.11.0",
+        "zod": "^3.11.6"
+    }
+}

@@ -1,0 +1,12 @@
+name = "trpc-demo"
+type = "javascript"
+zone_id = ""
+account_id = ""
+route = ""
+workers_dev = true
+compatibility_date = "2022-01-09"
+
+[build]
+command = "pnpm run build"
+[build.upload]
+format = "service-worker"
