@@ -1,4 +1,4 @@
-# tRPC running on a CloudFlare Worker 😎
+# tRPC running on a Cloudflare Worker 😎
 
 With the help of https://github.com/valu-digital/npm-packages/tree/master/packages/trpc-fetch-api-adapter
 
@@ -11,7 +11,7 @@ Example https://trpc-demo.esamatti.workers.dev/api/hello
 
 ## Development
 
-Get configure your CloudFlare workers, get pnpm and run:
+Get configure your Cloudflare Wrangler credentials, get pnpm and run:
 
 ```
 pnpm install
